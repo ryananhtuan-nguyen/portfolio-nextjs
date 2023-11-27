@@ -42,7 +42,7 @@ const Intro = () => {
           </motion.span>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
@@ -54,7 +54,7 @@ const Intro = () => {
         <span className="underline">
           React.js, Next.js, Express.js, Typescript, databases, ...
         </span>
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -82,6 +82,7 @@ const Intro = () => {
         </a>
 
         <a
+          aria-label="Linkedin"
           href="https://www.linkedin.com/in/ryan-nguyen-902196293/"
           target="_blank"
           className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
@@ -90,6 +91,7 @@ const Intro = () => {
         </a>
 
         <a
+          aria-label="Github"
           href="https://github.com/ryananhtuan-nguyen"
           target="_blank"
           className="bg-white p-4 flex text-gray-700 items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
