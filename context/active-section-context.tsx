@@ -13,6 +13,8 @@ import type { SectionName } from '@/lib/data'
 type ActiveSectionContextType = {
   activeSection: SectionName
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>
+  timeOfLastClick: number
+  setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>
 }
 
 export const ActiveSectionContext =
@@ -20,9 +22,17 @@ export const ActiveSectionContext =
 
 const ActiveSectionContextProvider = ({ children }: PropsWithChildren) => {
   const [activeSection, setActiveSection] = useState<SectionName>('Home')
+  const [timeOfLastClick, setTimeOfLastClick] = useState<number>(0)
 
   return (
-    <ActiveSectionContext.Provider value={{ activeSection, setActiveSection }}>
+    <ActiveSectionContext.Provider
+      value={{
+        activeSection,
+        setActiveSection,
+        timeOfLastClick,
+        setTimeOfLastClick,
+      }}
+    >
       {children}
     </ActiveSectionContext.Provider>
   )
