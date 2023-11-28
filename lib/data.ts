@@ -44,7 +44,8 @@ export const experiencesData = [
     location: 'New Market, Auckland',
     description:
       'Moving on from the course from Dev Academy, I immersed myself into learning and exploring new Technologies, building and deploying quite a few full-stack projects.',
-    icon: React.createElement(LuGraduationCap),
+    //  icon: React.createElement(LuGraduationCap),
+    icon: LuGraduationCap,
     date: '2023 - Present',
   },
   {
@@ -52,7 +53,8 @@ export const experiencesData = [
     location: 'New Market, Auckland',
     description:
       'I graduated from Level 6 in Applied Software Development course from Dev Academy Aotearoa.',
-    icon: React.createElement(CgWorkAlt),
+    //  icon: React.createElement(CgWorkAlt),
+    icon: CgWorkAlt,
     date: '2023',
   },
   {
@@ -60,7 +62,8 @@ export const experiencesData = [
     location: 'Mission Bay, Auckland',
     description:
       'Exceptional leadership skills honed through orchestrating kitchen operations and managing teams. Strong ability to delegate tasks efficiently while maintaining a clear vision of culinary goals. Profound teamwork experience in high-pressure kitchen environments, fostering cooperation, communication, and problem-solving. Adaptability, meticulous attention to detail, and a commitment to delivering exceptional results.',
-    icon: React.createElement(FaReact),
+    //  icon: React.createElement(FaReact),
+    icon: FaReact,
     date: '2014-2023',
   },
 ] as const
