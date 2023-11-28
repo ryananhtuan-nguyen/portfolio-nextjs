@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading'
 
 const Projects = () => {
   return (
-    <section>
+    <section id="projects">
       <SectionHeading>My projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
