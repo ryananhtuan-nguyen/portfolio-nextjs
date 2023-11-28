@@ -1,14 +1,17 @@
-'use client'
-import React from 'react'
-import { motion } from 'framer-motion'
+import { projectsData } from '@/lib/data'
+import Project from './Project'
 import SectionHeading from './SectionHeading'
 
 const Projects = () => {
   return (
-    <motion.section>
+    <section>
       <SectionHeading>My projects</SectionHeading>
-      <div></div>
-    </motion.section>
+      <div>
+        {projectsData.map((project, index) => (
+          <Project key={index} {...project} />
+        ))}
+      </div>
+    </section>
   )
 }
 
