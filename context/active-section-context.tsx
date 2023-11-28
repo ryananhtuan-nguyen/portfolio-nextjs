@@ -1,6 +1,12 @@
 'use client'
 
-import { PropsWithChildren, ReactNode, createContext, useState } from 'react'
+import {
+  PropsWithChildren,
+  ReactNode,
+  createContext,
+  useContext,
+  useState,
+} from 'react'
 
 import type { SectionName } from '@/lib/data'
 
@@ -9,9 +15,8 @@ type ActiveSectionContextType = {
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>
 }
 
-const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
-  null
-)
+export const ActiveSectionContext =
+  createContext<ActiveSectionContextType | null>(null)
 
 const ActiveSectionContextProvider = ({ children }: PropsWithChildren) => {
   const [activeSection, setActiveSection] = useState<SectionName>('Home')
@@ -24,3 +29,14 @@ const ActiveSectionContextProvider = ({ children }: PropsWithChildren) => {
 }
 
 export default ActiveSectionContextProvider
+
+export const useActiveSectionContext = () => {
+  const context = useContext(ActiveSectionContext)
+  if (context === null) {
+    throw new Error(
+      'useActiveSectionContext must be used within an ActiveSectionContextProvider'
+    )
+  }
+
+  return context
+}
