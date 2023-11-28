@@ -36,6 +36,8 @@ export const links = [
   },
 ] as const
 
+export type SectionName = (typeof links)[number]['name']
+
 export const experiencesData = [
   {
     title: 'Freelancer, content creator, contractor',
