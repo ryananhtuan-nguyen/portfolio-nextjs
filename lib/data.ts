@@ -2,12 +2,12 @@ import React from 'react'
 import { CgWorkAlt } from 'react-icons/cg'
 import { FaReact } from 'react-icons/fa'
 import { LuGraduationCap } from 'react-icons/lu'
-import wardrobeWonder from '/wardrobe-wonders.jpg'
-import messengerClone from '/messenger-clone.jpg'
-import cypress from '/cypress.png'
-import quill from '/quill.jpg'
-import digitalHippo from '/digitalhippo.jpg'
-import aiCompanion from '/ai-companion.jpg'
+import cypress from '@/public/cypress.png'
+import messengerClone from '@/public/messenger-clone.png'
+import quill from '@/public/quill.png'
+import digitalHippo from '@/public/digitalhippo.png'
+import aiCompanion from '@/public/ai-companion.png'
+import wardrobeWonder from '@/public/wardrobe-wonders.png'
 
 export const links = [
   {
@@ -161,6 +161,8 @@ export const projectsData = [
     imageUrl: aiCompanion,
   },
 ] as const
+
+export type ProjectProps = (typeof projectsData)[number]
 
 export const skillsData = [
   'HTML',
