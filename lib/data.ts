@@ -1,7 +1,7 @@
 import React from 'react'
 import { CgWorkAlt } from 'react-icons/cg'
-import { FaReact } from 'react-icons/fa'
-import { LuGraduationCap } from 'react-icons/lu'
+import { SiChef } from 'react-icons/si'
+import { LuGraduationCap, LuChefHat } from 'react-icons/lu'
 import cypress from '@/public/cypress.png'
 import messengerClone from '@/public/messenger-clone.png'
 import quill from '@/public/quill.png'
@@ -42,31 +42,27 @@ export const experiencesData = [
   {
     title: 'Freelancer, content creator, contractor',
     location: 'New Market, Auckland',
-    description:
-      'Moving on from the course from Dev Academy, I immersed myself into learning and exploring new Technologies, building and deploying quite a few full-stack projects.',
-    //  icon: React.createElement(LuGraduationCap),
-    icon: LuGraduationCap,
-    date: '2023 - Present',
+    description: `Moving on from the course from Dev Academy, I immersed myself into learning and exploring new Technologies, building and deploying quite a few full-stack projects, as well as contributing contents for some of the high-views youtube coding channels. Also currently a moderator of a React/Nextjs community with 10k+ members.`,
+    icon: React.createElement(CgWorkAlt),
+    date: '09/2023 - Present',
   },
   {
-    title: 'Front-End Developer',
+    title: 'Full-stack Developer',
     location: 'New Market, Auckland',
     description:
-      'I graduated from Level 6 in Applied Software Development course from Dev Academy Aotearoa.',
-    //  icon: React.createElement(CgWorkAlt),
-    icon: CgWorkAlt,
-    date: '2023',
+      'I graduated from Level 6 in Applied Software Development course from Dev Academy Aotearoa. I gained practical experience through pair programming and weekly group projects. Also developed strong collaboration, communication, and problem solving skills. I have been equipped with technical skills and a commitment to lifelong learning for a successful apps&sites development career.',
+    icon: React.createElement(LuGraduationCap),
+    date: '06-09/2023',
   },
   {
     title: 'Sous Chef',
     location: 'Mission Bay, Auckland',
-    description:
-      'Exceptional leadership skills honed through orchestrating kitchen operations and managing teams. Strong ability to delegate tasks efficiently while maintaining a clear vision of culinary goals. Profound teamwork experience in high-pressure kitchen environments, fostering cooperation, communication, and problem-solving. Adaptability, meticulous attention to detail, and a commitment to delivering exceptional results.',
-    //  icon: React.createElement(FaReact),
-    icon: FaReact,
+    description: `Exceptional leadership skills honed through orchestrating kitchen operations and managing teams. Strong ability to delegate tasks efficiently while maintaining a clear vision of culinary goals. Profound teamwork experience in high-pressure kitchen environments, fostering cooperation, communication, and problem-solving. Adaptability, meticulous attention to detail, and a commitment to delivering exceptional results.`,
+    icon: React.createElement(LuChefHat),
     date: '2014-2023',
   },
 ] as const
+export type ExperienceData = (typeof experiencesData)[number]
 
 export const projectsData = [
   {
