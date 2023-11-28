@@ -11,16 +11,16 @@ const Projects = () => {
   const { ref, inView } = useInView({
     threshold: 0.1,
   })
-  const { setActiveSection } = useActiveSectionContext()
+  const { setActiveSection, timeOfLastClick } = useActiveSectionContext()
 
   useEffect(() => {
-    if (inView) {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
       setActiveSection('Projects')
     }
-  }, [inView, setActiveSection])
+  }, [inView, setActiveSection, timeOfLastClick])
 
   return (
-    <section id="project" ref={ref} className="scroll-mt-28">
+    <section id="projects" ref={ref} className="scroll-mt-28">
       <SectionHeading>My projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
