@@ -59,7 +59,7 @@ const Contact = () => {
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-gray-700 -mt-5">
+      <p className="text-gray-700 -mt-5 dark:text-white/80">
         Please contact me directly at{' '}
         <a className="underline" href="mailto:ryan.nguyen0720@gmail.com">
           ryan.nguyen0720@gmail.com
@@ -67,10 +67,13 @@ const Contact = () => {
         or through this form.
       </p>
 
-      <form className="mt-10 flex flex-col" onSubmit={handleSubmit(onSubmit)}>
+      <form
+        className="mt-10 flex flex-col dark:text-black"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <input
           type="email"
-          className="h-14 px-4 rounded-lg borderBlack"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your email"
           required
           maxLength={500}
@@ -78,7 +81,7 @@ const Contact = () => {
           disabled={isSubmitting}
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your message"
           required
           maxLength={500}
@@ -87,7 +90,7 @@ const Contact = () => {
         />
         <button
           type="submit"
-          className="group h-[3rem] w-[8rem] text-white bg-gray-900 rounded-full outline-none transition-all flex items-center justify-center gap-2 focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950 disabled:scale-100 disabled:bg-opacity-65"
+          className="group h-[3rem] w-[8rem] text-white bg-gray-900 rounded-full outline-none transition-all flex items-center justify-center gap-2 focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950 disabled:scale-100 disabled:bg-opacity-65 dark:bg-white dark:bg-opacity-10"
           disabled={isSubmitting}
         >
           {isSubmitting ? (
