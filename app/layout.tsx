@@ -8,13 +8,11 @@ import ActiveSectionContextProvider from '@/context/active-section-context'
 import { ThemeProvider } from '@/context/next-theme-provider'
 import { Toaster } from 'sonner'
 import ModeToggle from '@/components/ModeToggle'
+import { constructMetadata } from '@/lib/utils'
+
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Ryan Nguyen | Personal Portfolio',
-  description:
-    'Ryan Nguyen is a full-stack developer experienced in Javascript, Typescript, React and Nextjs',
-}
+export const metadata = constructMetadata()
 
 export default function RootLayout({
   children,
