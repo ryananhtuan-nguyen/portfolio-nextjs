@@ -15,6 +15,10 @@ const Projects = () => {
         {projectsData.map((project, index) => (
           <Project key={index} {...project} />
         ))}
+        <p className="text-center break-words">
+          Keen to see more projects? All my github repos are
+          <span className="font-semibold"> visible to public</span> !
+        </p>
       </div>
     </section>
   )
