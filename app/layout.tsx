@@ -6,6 +6,7 @@ import Header from '@/components/Header'
 import ActiveSectionContextProvider from '@/context/active-section-context'
 import { Toaster } from 'sonner'
 import Footer from '@/components/Footer'
+import ModeToggle from '@/components/ModeToggle'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -33,6 +34,7 @@ export default function RootLayout({
           <Toaster position="top-center" richColors />
           <Footer />
         </ActiveSectionContextProvider>
+        <ModeToggle />
       </body>
     </html>
   )
