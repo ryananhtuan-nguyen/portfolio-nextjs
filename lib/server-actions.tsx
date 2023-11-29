@@ -1,5 +1,6 @@
 'use server'
 
+import { ContactEmailHTML } from '@/emails/ContactFormEmail'
 import { Resend } from 'resend'
 import { Form } from './form-schema'
 
@@ -12,7 +13,10 @@ export const sendEmail = async (value: Form) => {
       to: 'ryan.nguyen0720@gmail.com',
       subject: 'Message from contact form',
       reply_to: value.senderEmail,
-      text: value.message,
+      html: ContactEmailHTML({
+        senderEmail: value.senderEmail,
+        message: value.message,
+      }),
     })
     if (!response.id) {
       throw new Error('Failed to sent message, Internal Server Error')
