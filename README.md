@@ -1,6 +1,6 @@
 ## This is the second version of my portfolio.
 
-### Skills used in this portfolio:
+## Skills used in this portfolio:
    - React, Next.js.
    - Nextjs App Router.
    - Next.js new feature Server Action.
@@ -16,6 +16,7 @@
    - Beautiful customized toast notification with sonner.
    - Handling error in back-end server action, handling error front-end with toast error.
    - Resend, React-email/components: Style your own email.
+   - Remember user's choice of theme with localStorage.
 
-### A deployed version can be found here:
-   ## []()
+## A deployed version can be found here:
+   ### [https://ryannguyen-portfolio.vercel.app/](https://ryannguyen-portfolio.vercel.app/)
