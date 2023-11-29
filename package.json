@@ -14,9 +14,13 @@
     "next": "^13.4.8",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.48.2",
     "react-icons": "^4.12.0",
     "react-intersection-observer": "^9.5.3",
-    "react-vertical-timeline-component": "^3.6.0"
+    "react-vertical-timeline-component": "^3.6.0",
+    "resend": "^0.16.0",
+    "sonner": "^1.2.3",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
