@@ -61,8 +61,9 @@ const Intro = () => {
         with <span className="font-bold">experiences. </span> I enjoy building{' '}
         <span className="italic">sites & apps</span>. My focus is{' '}
         <span className="underline">
-          React.js, Next.js, Express.js, Typescript, databases, ...
+          React.js, Next.js, Express.js, Typescript, databases,
         </span>
+        ...
       </motion.h1>
 
       <motion.div
