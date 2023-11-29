@@ -1,13 +1,12 @@
-import React from 'react'
-import { CgWorkAlt } from 'react-icons/cg'
-import { SiChef } from 'react-icons/si'
-import { LuGraduationCap, LuChefHat } from 'react-icons/lu'
+import aiCompanion from '@/public/ai-companion.png'
 import cypress from '@/public/cypress.png'
+import digitalHippo from '@/public/digitalhippo.png'
 import messengerClone from '@/public/messenger-clone.png'
 import quill from '@/public/quill.png'
-import digitalHippo from '@/public/digitalhippo.png'
-import aiCompanion from '@/public/ai-companion.png'
 import wardrobeWonder from '@/public/wardrobe-wonders.png'
+import React from 'react'
+import { CgWorkAlt } from 'react-icons/cg'
+import { LuChefHat, LuGraduationCap } from 'react-icons/lu'
 
 export const links = [
   {
@@ -68,7 +67,7 @@ export const projectsData = [
   {
     title: 'Cypress',
     description:
-      'A Saas notion app where you can create and manage your own workspace, folders, and file, as well as collaborate with others with realtime update, realtime cursor, realtime selection, and realtime create/update/delete folder, file, and workspaces.',
+      'A Saas notion app with realtime features for you to collaborate with others',
     tags: [
       'React',
       'Next.js',
@@ -81,18 +80,20 @@ export const projectsData = [
       'Stripe',
     ],
     imageUrl: cypress,
+    link: 'https://notion-clone-production-90f7.up.railway.app',
   },
   {
-    title: 'Wardrobe wonders',
+    title: 'WardrobeWonders',
     description:
-      'A digital wardrobe that helps you manage your own wardrobe and also can share your outfit of the day, as well as like and commenting on other users outfits. This project is our final group project built during the bootcamp in Dev Academy Aotearoa.',
+      'My final group project in Dev Academy. Your digital wardrobe !',
     tags: ['React', 'PostgresSQL', 'Tailwind', 'Knex.js', 'Express.js'],
     imageUrl: wardrobeWonder,
+    link: 'https://wardrobe-wonders.onrender.com',
   },
   {
-    title: 'Facebook messenger clone',
+    title: 'MessengerApp',
     description:
-      'A simple messenger app inspired by facebook messenger, where user can send messages, photos, and also see the status of the other user all in real-time',
+      'A simple realtime messenger app inspired by facebook messenger.',
     tags: [
       'React',
       'TypeScript',
@@ -106,11 +107,11 @@ export const projectsData = [
       'Auth0',
     ],
     imageUrl: messengerClone,
+    link: 'https://messenger-clone-eight-navy.vercel.app',
   },
   {
     title: 'Quillbot',
-    description:
-      'A SaaS app that give you the power to upload your own pdf, view it in your own way, and also interact with the pdf file with the help of Open AI',
+    description: 'A SaaS app where you can interact with your own PDF file.',
     tags: [
       'React.js',
       'Next.js',
@@ -126,11 +127,12 @@ export const projectsData = [
       'ClerkAuth',
     ],
     imageUrl: quill,
+    link: 'https://quill-sooty-zeta.vercel.app',
   },
   {
     title: 'DigitalHippo',
     description:
-      'A modern digital market place where you can sell or purchase your digital assets, with Admin dashboard provided',
+      'A modern digital market place where you can sell or purchase your digital assets, with Admin dashboard provided.',
     tags: [
       'React.js',
       'Next.js',
@@ -143,6 +145,7 @@ export const projectsData = [
       'Tailwind',
     ],
     imageUrl: digitalHippo,
+    link: 'https://digital-hippo-production.up.railway.app',
   },
   {
     title: 'AI-Companion',
@@ -160,6 +163,7 @@ export const projectsData = [
       'OpenAI',
     ],
     imageUrl: aiCompanion,
+    link: 'https://github.com/ryananhtuan-nguyen/ai-companion',
   },
 ] as const
 
