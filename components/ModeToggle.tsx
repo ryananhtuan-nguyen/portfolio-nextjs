@@ -6,12 +6,13 @@ import { useTheme } from 'next-themes'
 type Theme = 'light' | 'dark'
 
 const ModeToggle = () => {
-  const { theme, setTheme } = useTheme()
+  const { systemTheme, theme, setTheme } = useTheme()
   const [isMounted, setIsMounted] = useState(false)
 
   const toggleTheme = () => {
     if (theme === 'light') {
       setTheme('dark')
+      window.localStorage.setItem('theme', 'dark')
     } else {
       setTheme('light')
       window.localStorage.setItem('theme', 'light')
@@ -24,10 +25,14 @@ const ModeToggle = () => {
 
     if (localTheme) {
       setTheme(localTheme)
-    } else if (window.matchMedia('(prefers-color-scheme:dark)').matches) {
-      setTheme('dark')
+    } else {
+      if (systemTheme === 'light') {
+        setTheme('light')
+      } else {
+        setTheme('dark')
+      }
     }
-  }, [setTheme])
+  }, [setTheme, systemTheme])
 
   //hydration
   if (!isMounted) return null
