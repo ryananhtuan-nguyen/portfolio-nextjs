@@ -67,7 +67,7 @@ export const projectsData = [
   {
     title: 'Cypress',
     description:
-      'A Saas notion app with realtime features for you to collaborate with others',
+      'A Saas notion app with realtime features for you to collaborate with others.',
     tags: [
       'React',
       'Next.js',
@@ -184,7 +184,7 @@ export const skillsData = [
   'DrizzleORM',
   'MongoDB',
   '@tanstack/react-query',
-  'Apollo',
+  'Axios',
   'Express.js',
   'PostgreSQL',
   'mysql',
