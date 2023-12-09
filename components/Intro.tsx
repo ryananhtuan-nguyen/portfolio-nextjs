@@ -60,10 +60,12 @@ const Intro = () => {
         I&apos;m a{' '}
         <span className="font-bold">experienced full-stack developer. </span>I
         enjoy building <span className="italic">sites & apps</span>. My focus is{' '}
-        <span className="underline">
-          React.js, Next.js, Express.js, Typescript, databases,
-        </span>
-        ...
+        <span className="underline">React.js</span> ,{' '}
+        <span className="underline">Next.js</span> ,{' '}
+        <span className="underline">Express.js</span> ,{' '}
+        <span className="underline">Javascript</span> &{' '}
+        <span className="underline">Typescript</span> ,{' '}
+        <span className="underline">databases</span> , and much more!
       </motion.h1>
 
       <motion.div
