@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Toaster } from 'sonner'
 import './globals.css'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import ActiveSectionContextProvider from '@/context/active-section-context'
 import { ThemeProvider } from '@/context/next-theme-provider'
-import { Toaster } from 'sonner'
 import ModeToggle from '@/components/ModeToggle'
 import { constructMetadata } from '@/lib/utils'
 
@@ -32,6 +33,7 @@ export default function RootLayout({
             {children}
             <Toaster position="top-center" richColors />
             <Footer />
+            <SpeedInsights />
           </ActiveSectionContextProvider>
           <ModeToggle />
         </ThemeProvider>
