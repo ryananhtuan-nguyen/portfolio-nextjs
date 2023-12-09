@@ -4,6 +4,7 @@ import digitalHippo from '@/public/digitalhippo.png'
 import messengerClone from '@/public/messenger-clone.png'
 import quill from '@/public/quill.png'
 import wardrobeWonder from '@/public/wardrobe-wonders.png'
+import glTodos from '@/public/glTodos.png'
 import React from 'react'
 import { CgWorkAlt } from 'react-icons/cg'
 import { LuChefHat, LuGraduationCap } from 'react-icons/lu'
@@ -74,7 +75,7 @@ export const projectsData = [
       'Supabase',
       'Tailwind',
       'DrizzleORM',
-      'PostgresSQL',
+      'PostgreSQL',
       'socket.io',
       'QuillEditor',
       'Stripe',
@@ -83,10 +84,26 @@ export const projectsData = [
     link: 'https://notion-clone-production-90f7.up.railway.app',
   },
   {
+    title: 'GlorifiedTodos',
+    description:
+      'Collaborate, manage projects, and reach new productivity peaks.',
+    tags: [
+      'React',
+      'Nextjs',
+      'ServerAction',
+      'Prisma',
+      'mysql',
+      'Stripe',
+      'Tailwind',
+    ],
+    imageUrl: glTodos,
+    link: 'https://glorified-todos.vercel.app',
+  },
+  {
     title: 'WardrobeWonders',
     description:
       'My final group project in Dev Academy. Your digital wardrobe !',
-    tags: ['React', 'PostgresSQL', 'Tailwind', 'Knex.js', 'Express.js'],
+    tags: ['React', 'PostgreSQL', 'Tailwind', 'Knex.js', 'Express.js'],
     imageUrl: wardrobeWonder,
     link: 'https://wardrobe-wonders.onrender.com',
   },
