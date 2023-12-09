@@ -44,7 +44,7 @@ const About = () => {
         </span>{' '}
         I am also familiar with{' '}
         <span className="font-medium text-italic">
-          Prisma, Drizzle ORM, Socket.io, TailwindCSS Express.js, and I&apos;m
+          Prisma, Drizzle ORM, Socket.io, TailwindCSS, Express.js, and I&apos;m
           learning more and more everyday.
         </span>{' '}
       </p>
