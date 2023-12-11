@@ -57,7 +57,7 @@ const Intro = () => {
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
         Hello, I&apos;m<span className="font-bold"> Ryan Nguyen. </span>
-        I&apos;m a{' '}
+        I&apos;m an{' '}
         <span className="font-bold">experienced full-stack developer. </span>I
         enjoy building <span className="italic">sites & apps</span>. My focus is{' '}
         <span className="underline">React.js</span> ,{' '}
