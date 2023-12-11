@@ -19,7 +19,7 @@ const About = () => {
       <p className="mb-3 ">
         I&apos;m Ryan Nguyen, a passionate{' '}
         <span className="font-medium">full-stack developer </span>who thrived in
-        a<span className="font-medium">rigorous 15 -week bootcamp</span> at{' '}
+        a<span className="font-medium"> rigorous 15-week bootcamp</span> at{' '}
         <span className="text-italic">Dev Academy</span>.
       </p>
       <p className="mb-3 ">
@@ -27,13 +27,13 @@ const About = () => {
         <span className="font-medium">almost a decade</span> as a Sous Chef, I
         have equipped myself with:
         <ul className="!list-disc pl-2 sm:pl-12">
-          <li>Exceptional leadership skills</li>
-          <li>Strong ability to delegate tasks efficiently</li>
+          <li>Exceptional leadership skill.</li>
+          <li>Strong ability to delegate tasks efficiently.</li>
           <li>
             Profound teamwork experience in high-pressured environments,
-            fostering cooperation, communication and problem-solving
+            fostering cooperation, communication and problem-solving.
           </li>
-          <li>Adaptability, meticulous attention to details</li>
+          <li>Adaptability, meticulous attention to details.</li>
           <li>Commitment to delevering exceptional results.</li>
         </ul>
       </p>
