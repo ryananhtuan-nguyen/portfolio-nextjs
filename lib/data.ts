@@ -42,7 +42,7 @@ export const experiencesData = [
   {
     title: 'Freelancer, content creator, contractor',
     location: 'New Market, Auckland',
-    description: `Moving on from the course from Dev Academy, I immersed myself into learning and exploring new Technologies, building and deploying quite a few full-stack projects, as well as contributing contents for some of the high-views youtube coding channels. Also currently a moderator of a React/Nextjs community with 8k+ subscribers.`,
+    description: `Moving on from the course from Dev Academy, I immersed myself into learning and exploring new technologies, building and deploying quite a few full-stack projects, as well as contributing content for some of the high-views YouTube coding channels. Also currently a moderator of a React/Nextjs community with 8k+ subscribers.`,
     icon: React.createElement(CgWorkAlt),
     date: '09/2023 - Present',
   },
