@@ -1,13 +1,13 @@
-import aiCompanion from '@/public/ai-companion.png'
-import cypress from '@/public/cypress.png'
-import digitalHippo from '@/public/digitalhippo.png'
-import messengerClone from '@/public/messenger-clone.png'
-import quill from '@/public/quill.png'
-import wardrobeWonder from '@/public/wardrobe-wonders.png'
-import glTodos from '@/public/glTodos.png'
-import React from 'react'
-import { CgWorkAlt } from 'react-icons/cg'
-import { LuChefHat, LuGraduationCap } from 'react-icons/lu'
+import aiCompanion from '@/public/ai-companion.png';
+import cypress from '@/public/cypress.png';
+import digitalHippo from '@/public/digitalhippo.png';
+import messengerClone from '@/public/messenger-clone.png';
+import quill from '@/public/quill.png';
+import wardrobeWonder from '@/public/wardrobe-wonders.png';
+import glTodos from '@/public/glTodos.png';
+import React from 'react';
+import { CgWorkAlt } from 'react-icons/cg';
+import { LuChefHat, LuGraduationCap } from 'react-icons/lu';
 
 export const links = [
   {
@@ -34,15 +34,15 @@ export const links = [
     name: 'Contact',
     hash: '#contact',
   },
-] as const
+] as const;
 
-export type SectionName = (typeof links)[number]['name']
+export type SectionName = (typeof links)[number]['name'];
 
 export const experiencesData = [
   {
     title: 'Freelancer, content creator, contractor',
     location: 'New Market, Auckland',
-    description: `Moving on from the course from Dev Academy, I immersed myself into learning and exploring new technologies, building and deploying quite a few full-stack projects, as well as contributing content for some of the high-views YouTube coding channels. Also currently a moderator of a React/Nextjs community with 8k+ subscribers.`,
+    description: `Moving on from the course from Dev Academy, I immersed myself into learning and exploring new technologies, building and deploying quite a few full-stack projects. Also currently contributing to a YouTube channel with 11k+ subscribers, 50-100k+ views videos and an active discord community.`,
     icon: React.createElement(CgWorkAlt),
     date: '09/2023 - Present',
   },
@@ -61,8 +61,8 @@ export const experiencesData = [
     icon: React.createElement(LuChefHat),
     date: '2014-2023',
   },
-] as const
-export type ExperienceData = (typeof experiencesData)[number]
+] as const;
+export type ExperienceData = (typeof experiencesData)[number];
 
 export const projectsData = [
   {
@@ -182,9 +182,9 @@ export const projectsData = [
     imageUrl: aiCompanion,
     link: 'https://github.com/ryananhtuan-nguyen/ai-companion',
   },
-] as const
+] as const;
 
-export type ProjectProps = (typeof projectsData)[number]
+export type ProjectProps = (typeof projectsData)[number];
 
 export const skillsData = [
   'HTML',
@@ -209,4 +209,5 @@ export const skillsData = [
   'Framer Motion',
   'websocket',
   'socket.io',
-] as const
+  'Golang',
+] as const;
