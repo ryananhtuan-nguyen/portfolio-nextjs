@@ -1,10 +1,10 @@
-'use client'
-import { useSectionInView } from '@/lib/hooks'
-import { motion } from 'framer-motion'
-import SectionHeading from './SectionHeading'
+'use client';
+import { useSectionInView } from '@/lib/hooks';
+import { motion } from 'framer-motion';
+import SectionHeading from './SectionHeading';
 
 const About = () => {
-  const { ref } = useSectionInView('About')
+  const { ref } = useSectionInView('About');
 
   return (
     <motion.section
@@ -26,17 +26,17 @@ const About = () => {
         With a background of{' '}
         <span className="font-medium">almost a decade</span> as a Sous Chef, I
         have equipped myself with:
-        <ul className="!list-disc pl-2 sm:pl-12">
-          <li>Exceptional leadership skill.</li>
-          <li>Strong ability to delegate tasks efficiently.</li>
-          <li>
-            Profound teamwork experience in high-pressured environments,
-            fostering cooperation, communication and problem-solving.
-          </li>
-          <li>Adaptability, meticulous attention to details.</li>
-          <li>Commitment to delevering exceptional results.</li>
-        </ul>
       </p>
+      <ul className="!list-disc pl-2 sm:pl-12">
+        <li>Exceptional teamwork skill.</li>
+        <li>Strong ability to delegate tasks efficiently.</li>
+        <li>
+          Profound teamwork experience in high-pressured environments, fostering
+          cooperation, communication and problem-solving.
+        </li>
+        <li>Adaptability, meticulous attention to details.</li>
+        <li>Commitment to delevering exceptional results.</li>
+      </ul>
       <p className="mb-3 ">
         My core stack is{' '}
         <span className="font-medium">
@@ -44,8 +44,9 @@ const About = () => {
         </span>{' '}
         I am also familiar with{' '}
         <span className="font-medium text-italic">
-          Prisma, Drizzle ORM, Socket.io, TailwindCSS, Express.js, and I&apos;m
-          learning more and more everyday.
+          Prisma, Drizzle ORM, Socket.io, TailwindCSS, Express.js, backend
+          server and routing with Golang and I&apos;m learning more and more
+          everyday.
         </span>{' '}
       </p>
       <p>
@@ -53,7 +54,7 @@ const About = () => {
         in my free time.
       </p>
     </motion.section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
