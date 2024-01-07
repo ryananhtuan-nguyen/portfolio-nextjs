@@ -187,12 +187,13 @@ export const projectsData = [
 export type ProjectProps = (typeof projectsData)[number];
 
 export const skillsData = [
-  'HTML',
-  'CSS',
+  'Next.js',
+  'React',
   'JavaScript',
   'TypeScript',
-  'React',
-  'Next.js',
+  'HTML',
+  'CSS',
+  'Golang',
   'Node.js',
   'Git',
   'Tailwind',
@@ -209,5 +210,4 @@ export const skillsData = [
   'Framer Motion',
   'websocket',
   'socket.io',
-  'Golang',
 ] as const;
