@@ -67,6 +67,14 @@ export type ExperienceData = (typeof experiencesData)[number];
 
 export const projectsData = [
   {
+    title: 'Chess game',
+    description:
+      'A chess game built in Next.js, using OOP principles in Typescript.',
+    tags: ['Next.js', 'React.js', 'OOP', 'TypeScript', 'Tailwind'],
+    imageUrl: chessGame,
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7154727391410487296/',
+  },
+  {
     title: 'Cypress',
     description:
       'A Saas notion app with realtime features for you to collaborate with others.',
@@ -164,14 +172,6 @@ export const projectsData = [
     ],
     imageUrl: digitalHippo,
     link: 'https://digital-hippo-production.up.railway.app',
-  },
-  {
-    title: 'Chess game',
-    description:
-      'A chess game built in Next.js, using OOP principles in Typescript.',
-    tags: ['Next.js', 'React.js', 'OOP', 'TypeScript', 'Tailwind'],
-    imageUrl: chessGame,
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7154727391410487296/',
   },
 ] as const;
 
