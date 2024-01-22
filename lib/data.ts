@@ -5,6 +5,7 @@ import messengerClone from '@/public/messenger-clone.png';
 import quill from '@/public/quill.png';
 import wardrobeWonder from '@/public/wardrobe-wonders.png';
 import glTodos from '@/public/glTodos.png';
+import chessGame from '@/public/chessGame.png';
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { LuChefHat, LuGraduationCap } from 'react-icons/lu';
@@ -165,22 +166,12 @@ export const projectsData = [
     link: 'https://digital-hippo-production.up.railway.app',
   },
   {
-    title: 'AI-Companion',
+    title: 'Chess game',
     description:
-      'A SaaS app where you can create your own custom AI companion and be able to interact with it.',
-    tags: [
-      'Next.js',
-      'React.js',
-      'ClerkAuth',
-      'Prisma',
-      'mysql',
-      'Tailwind',
-      'Stripe',
-      'Pinecone',
-      'OpenAI',
-    ],
-    imageUrl: aiCompanion,
-    link: 'https://github.com/ryananhtuan-nguyen/ai-companion',
+      'A chess game built in Next.js, using OOP principles in Typescript.',
+    tags: ['Next.js', 'React.js', 'OOP', 'TypeScript', 'Tailwind'],
+    imageUrl: chessGame,
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7154727391410487296/',
   },
 ] as const;
 
