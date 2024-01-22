@@ -155,24 +155,6 @@ export const projectsData = [
     imageUrl: quill,
     link: 'https://quill-sooty-zeta.vercel.app',
   },
-  {
-    title: 'DigitalHippo',
-    description:
-      'A modern digital market place where you can sell or purchase your digital assets, with Admin dashboard provided.',
-    tags: [
-      'React.js',
-      'Next.js',
-      'Express.js',
-      'MongoDB',
-      'tRPC',
-      'Payload',
-      'Resend',
-      'Swiper',
-      'Tailwind',
-    ],
-    imageUrl: digitalHippo,
-    link: 'https://digital-hippo-production.up.railway.app',
-  },
 ] as const;
 
 export type ProjectProps = (typeof projectsData)[number];
