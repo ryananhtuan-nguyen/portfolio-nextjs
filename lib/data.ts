@@ -41,14 +41,14 @@ export type SectionName = (typeof links)[number]['name'];
 
 export const experiencesData = [
   {
-    title: 'Freelancer, content creator, contractor',
+    title: 'Freelancer',
     location: 'New Market, Auckland',
     description: `Moving on from the course from Dev Academy, I immersed myself into learning and exploring new technologies, building and deploying quite a few full-stack projects. Also currently contributing to a YouTube channel with 11k+ subscribers, 50-100k+ views videos and an active discord community.`,
     icon: React.createElement(CgWorkAlt),
     date: '09/2023 - Present',
   },
   {
-    title: 'Full-stack Developer',
+    title: 'Student - Fullstack Developer',
     location: 'New Market, Auckland',
     description:
       'I graduated from Level 6 in Applied Software Development course from Dev Academy Aotearoa. I gained practical experience through pair programming and weekly group projects. Also developed strong collaboration, communication, and problem solving skills. I have been equipped with technical skills and a commitment to lifelong learning for a successful apps&sites development career.',
@@ -72,12 +72,12 @@ export const projectsData = [
       'A chess game built in Next.js, using OOP principles in Typescript.',
     tags: ['Next.js', 'React.js', 'OOP', 'TypeScript', 'Tailwind'],
     imageUrl: chessGame,
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7154727391410487296/',
+    link: 'https://simple-chess-six.vercel.app/',
   },
   {
     title: 'Cypress',
     description:
-      'A Saas notion app with realtime features for you to collaborate with others.',
+      'A Saas notion killer app with realtime features for you to collaborate with others. Demo without signing up? Test account test2@example.com, with password 123321.',
     tags: [
       'React',
       'Next.js',
