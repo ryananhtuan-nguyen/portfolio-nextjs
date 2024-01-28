@@ -77,7 +77,7 @@ export const projectsData = [
   {
     title: 'Cypress',
     description:
-      'A Saas notion killer app with realtime features for you to collaborate with others. Demo without signing up? Test account test2@example.com, with password 123321.',
+      'A Saas notion killer app with realtime collaboration features. Demo without signing up? Test account test2@example.com, with password 123321.',
     tags: [
       'React',
       'Next.js',
