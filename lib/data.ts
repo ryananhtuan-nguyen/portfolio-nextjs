@@ -1,11 +1,9 @@
-import aiCompanion from '@/public/ai-companion.png';
+import chessGame from '@/public/chessGame.png';
 import cypress from '@/public/cypress.png';
-import digitalHippo from '@/public/digitalhippo.png';
+import glTodos from '@/public/glTodos.png';
 import messengerClone from '@/public/messenger-clone.png';
 import quill from '@/public/quill.png';
 import wardrobeWonder from '@/public/wardrobe-wonders.png';
-import glTodos from '@/public/glTodos.png';
-import chessGame from '@/public/chessGame.png';
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { LuChefHat, LuGraduationCap } from 'react-icons/lu';
@@ -67,14 +65,6 @@ export type ExperienceData = (typeof experiencesData)[number];
 
 export const projectsData = [
   {
-    title: 'Chess game',
-    description:
-      'A chess game built in Next.js, using OOP principles in Typescript.',
-    tags: ['Next.js', 'React.js', 'OOP', 'TypeScript', 'Tailwind'],
-    imageUrl: chessGame,
-    link: 'https://simple-chess-six.vercel.app/',
-  },
-  {
     title: 'Cypress',
     description:
       'A Saas notion killer app with realtime collaboration features. Demo without signing up? Test account test2@example.com, with password 123321.',
@@ -107,6 +97,14 @@ export const projectsData = [
     ],
     imageUrl: glTodos,
     link: 'https://glorified-todos.vercel.app',
+  },
+  {
+    title: 'Chess game',
+    description:
+      'A chess game built in Next.js, using OOP principles in Typescript.',
+    tags: ['Next.js', 'React.js', 'OOP', 'TypeScript', 'Tailwind'],
+    imageUrl: chessGame,
+    link: 'https://simple-chess-six.vercel.app/',
   },
   {
     title: 'WardrobeWonders',
