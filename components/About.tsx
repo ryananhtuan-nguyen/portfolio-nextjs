@@ -1,10 +1,10 @@
-'use client';
-import { useSectionInView } from '@/lib/hooks';
-import { motion } from 'framer-motion';
-import SectionHeading from './SectionHeading';
+'use client'
+import { useSectionInView } from '@/lib/hooks'
+import { motion } from 'framer-motion'
+import SectionHeading from './SectionHeading'
 
 const About = () => {
-  const { ref } = useSectionInView('About');
+  const { ref } = useSectionInView('About')
 
   return (
     <motion.section
@@ -17,10 +17,8 @@ const About = () => {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3 ">
-        I&apos;m Ryan Nguyen, a passionate{' '}
-        <span className="font-medium">full-stack developer </span>who thrived in
-        a<span className="font-medium"> rigorous 15-week bootcamp</span> at{' '}
-        <span className="text-italic">Dev Academy</span>.
+        I&apos;m Ryan Nguyen, a former professional Sous Chef whos now a{' '}
+        <span className="font-medium">full-stack developer </span>.
       </p>
       <p className="mb-3 ">
         With a background of{' '}
@@ -38,9 +36,9 @@ const About = () => {
         <li>Commitment to delevering exceptional results.</li>
       </ul>
       <p className="mb-3 ">
-        My core stack is{' '}
+        In the tech world, my core stack is{': '}
         <span className="font-medium">
-          React.js, TypeScript,Next.js, Node.js, MongoDB and Mysql.
+          React.js, TypeScript, Next.js, Node.js, MongoDB, postgres and Mysql.
         </span>{' '}
         I am also familiar with{' '}
         <span className="font-medium text-italic">
@@ -54,7 +52,7 @@ const About = () => {
         in my free time.
       </p>
     </motion.section>
-  );
-};
+  )
+}
 
-export default About;
+export default About
