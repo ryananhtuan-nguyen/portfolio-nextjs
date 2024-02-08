@@ -1,12 +1,12 @@
-import chessGame from '@/public/chessGame.png';
-import cypress from '@/public/cypress.png';
-import glTodos from '@/public/glTodos.png';
-import messengerClone from '@/public/messenger-clone.png';
-import quill from '@/public/quill.png';
-import wardrobeWonder from '@/public/wardrobe-wonders.png';
-import React from 'react';
-import { CgWorkAlt } from 'react-icons/cg';
-import { LuChefHat, LuGraduationCap } from 'react-icons/lu';
+import chessGame from '@/public/chessGame.png'
+import cypress from '@/public/cypress.png'
+import glTodos from '@/public/glTodos.png'
+import messengerClone from '@/public/messenger-clone.png'
+import quill from '@/public/quill.png'
+import wardrobeWonder from '@/public/wardrobe-wonders.png'
+import React from 'react'
+import { CgWorkAlt } from 'react-icons/cg'
+import { LuChefHat, LuGraduationCap } from 'react-icons/lu'
 
 export const links = [
   {
@@ -33,9 +33,9 @@ export const links = [
     name: 'Contact',
     hash: '#contact',
   },
-] as const;
+] as const
 
-export type SectionName = (typeof links)[number]['name'];
+export type SectionName = (typeof links)[number]['name']
 
 export const experiencesData = [
   {
@@ -60,8 +60,8 @@ export const experiencesData = [
     icon: React.createElement(LuChefHat),
     date: '2014-2023',
   },
-] as const;
-export type ExperienceData = (typeof experiencesData)[number];
+] as const
+export type ExperienceData = (typeof experiencesData)[number]
 
 export const projectsData = [
   {
@@ -80,7 +80,7 @@ export const projectsData = [
       'Stripe',
     ],
     imageUrl: cypress,
-    link: 'https://notion-clone-production-90f7.up.railway.app',
+    link: 'https://cypress-collaboration.up.railway.app/',
   },
   {
     title: 'GlorifiedTodos',
@@ -153,9 +153,9 @@ export const projectsData = [
     imageUrl: quill,
     link: 'https://quill-sooty-zeta.vercel.app',
   },
-] as const;
+] as const
 
-export type ProjectProps = (typeof projectsData)[number];
+export type ProjectProps = (typeof projectsData)[number]
 
 export const skillsData = [
   'Next.js',
@@ -181,4 +181,4 @@ export const skillsData = [
   'Framer Motion',
   'websocket',
   'socket.io',
-] as const;
+] as const
