@@ -8,6 +8,7 @@ import React from 'react'
 import { CgWorkAlt } from 'react-icons/cg'
 import { LuChefHat, LuGraduationCap } from 'react-icons/lu'
 
+//links for nav
 export const links = [
   {
     name: 'Home',
