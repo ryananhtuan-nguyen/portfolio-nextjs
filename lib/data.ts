@@ -40,6 +40,21 @@ export type SectionName = (typeof links)[number]['name']
 
 export const experiencesData = [
   {
+    title: 'Software Engineer',
+    location: 'New Market, Auckland',
+    description: `Designing,
+    coding, testing, and maintaining software
+    applications. Responsibilities include coding,
+    design, testing, collaboration, documentation,
+    problem-solving, version control, CI/CD
+    implementation, security compliance, adapting to
+    industry trends, and project management.
+    Specialization areas include front-end, back
+   end, mobile, or DevOps.`,
+    icon: React.createElement(CgWorkAlt),
+    date: '02/2024 - Present',
+  },
+  {
     title: 'Freelancer',
     location: 'New Market, Auckland',
     description: `Moving on from the course from Dev Academy, I immersed myself into learning and exploring new technologies, building and deploying quite a few full-stack projects. Also currently contributing to a YouTube channel with 11k+ subscribers, 50-100k+ views videos and an active discord community.`,
