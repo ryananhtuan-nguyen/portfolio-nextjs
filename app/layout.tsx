@@ -1,23 +1,23 @@
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Inter } from 'next/font/google';
-import { Toaster } from 'sonner';
-import './globals.css';
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Inter } from 'next/font/google'
+import { Toaster } from 'sonner'
+import './globals.css'
 
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import ModeToggle from '@/components/ModeToggle';
-import ActiveSectionContextProvider from '@/context/active-section-context';
-import { ThemeProvider } from '@/context/next-theme-provider';
-import { constructMetadata } from '@/lib/utils';
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import ModeToggle from '@/components/ModeToggle'
+import ActiveSectionContextProvider from '@/context/active-section-context'
+import { ThemeProvider } from '@/context/next-theme-provider'
+import { constructMetadata } from '@/lib/utils'
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = constructMetadata();
+export const metadata = constructMetadata()
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
@@ -38,5 +38,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
